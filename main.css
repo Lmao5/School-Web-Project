@@ -131,8 +131,8 @@ form{
   text-align: right;
   float:left;
 }
-.Form fieldset input{
-  display: block;
+.Form fieldset p{
+  display: inline-block;
   font-size:0.9em;
   margin:7px 0px;
   width:50%;
