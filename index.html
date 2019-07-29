@@ -52,19 +52,19 @@
     <p>Games are what caused me to be interested in Information Technology. It all started when I played...</p>
   </div>
 </div>
-  <div class="Form">
-    <form class="Form" action="index.html" method="post" id = "sendForm">
+  <div class = "Form">
+    <form class = "Form" name="contact" method="POST" DATA-NETLIFY="true">
       <fieldset>
       <legend>Contact Us!</legend>
-        <label for="firstName">First Name:</label>
-        <input type="text" id = "firstName" name = "firstName" required/><br>
-      <label for="lastName">Last Name:</label>
-      <input type="text" id = "lastName" name = "lastName"/><br>
-        <label for="email">Email Address:</label>
-        <input type="email" id = 'email' name = "email" required/><br>
-        <label for="message">Message:</label>
-        <input type="text" id = "text" name ="text"/>
-        <button type = "submit" form = "sendForm" value = "submit" style = "font-family:Lekton,sans-serif;background-color: rgb(53, 57, 64); color:white;">Submit</button>
+        <p><label>First Name:
+        <input type="text" name = "firstName" required/></label></p>
+      <p><label>Last Name:
+      <input type="text"name = "lastName"/></label></p>
+        <p><label for="email">Email Address:
+        <input type="email"name = "email" required/></label></p>
+        <p><label>Message:
+        <textarea name ="message"/></textarea></label></p>
+        <p><button type = "submit" form = "sendForm" value = "submit" style = "font-family:Lekton,sans-serif;background-color: rgb(53, 57, 64); color:white;">Submit</button></p>
         </fieldset>
     </form>
   </div>
@@ -77,4 +77,7 @@
     <p style = "font-family:Lekton,sans-serif; color:white;text-align:center;">Made by Hasan</p>
   </div>
   </body>
+  <script type="text/javascript">
+
+  </script>
 </html>
