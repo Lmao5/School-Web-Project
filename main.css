@@ -17,9 +17,18 @@ body{
 }
 .firstTitle{
   margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
   font-size: 2em;
   color:white;
   font-family:Lekton,sans-serif;
+}
+.firstTitle img{
+  height:200px;
+  width:200px;
+  display: inline-block;
+  border-width: 1px;
+  border-radius: 100px 100px 100px 100px;
 }
 header nav{
   margin: auto;
@@ -54,18 +63,13 @@ header nav ul li a.notChosen{
 }
 .AboutMe{
   margin-left: 5px;
+  margin-right: 5px;
   text-align: left;
   font-size: 20px;
   font-family: Lekton,sans-serif;
   color: white;
 }
-.AboutMe img{
-  height:200px;
-  width:200px;
-  display: inline;
-  border-width: 1px;
-  border-radius: 100px 100px 100px 100px;
-}
+
 .Work nav {
   margin: auto;
 }

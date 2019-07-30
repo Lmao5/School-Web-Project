@@ -4,9 +4,8 @@
     <meta charset="utf-8">
     <title>This is Hasan</title>
     <link rel="stylesheet" type="text/css" href="main.css">
-  <script type="text/javascript" src="formProcessor.js">
-    </script>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="typerwriter.js"></script>
   </head>
   <body>
     <div class="colorInside">
@@ -21,17 +20,17 @@
     </nav>
     </header>
     <div class = 'firstTitle'>
-    <h1 class= "typewriter">Hello!<br>
-    I am Hasan</h1>
+    <h1 id= "typewriter">
+    </h1>
+    <img src="Images\c48.jpg" alt="picture of Hasan"/>
   </div>
   <div class="AboutMe">
     <div>
-      <img src="Images\c48.jpg" alt="picture of Hasan"/>
     </div>
-      <h2>This is me!</h2>
+      <a href = "About Me.html"><h2>About Me</h2></a>
       <p>I am currently studying in <span><a href="https://www.nyp.edu.sg/">Nanyang Polytechnic</a></span>&nbspas a Year 1 student in Diploma of Information Technology.<br>I plan to specialise
-      in A.I(Artificial Intelligence) and continue to further my studies into university. Eventually,I plan to work in a big tech firm or start up a company of my own.
-       I used to be a member of the InfoComm Club in my secondary school because I was interested in the field of IT and hoping that I am exposed to it as soon as possible<a href="About Me.html"/>...</a></p>
+      in A.I(Artificial Intelligence) and continue to further my studies into university.<br>Eventually,I plan to work in a big tech firm or start up a company of my own.
+       I used to be a member of the InfoComm Club in <a href ="https://regentsec.moe.edu.sg/">Regent Secondary School</a> because I was interested in the field of IT and hoping that I am exposed to it as soon as possible.</p>
   </div>
   <div class="Work">
     <a href = "Work.html"><h2 style = "text-align: left;">Works</h2></a>
@@ -49,7 +48,7 @@
   <div class="Games">
     <img src="#" alt="video game controller"/>
     <a href="Game.html"><h2>Games</h2></a>
-    <p>Games are what caused me to be interested in Information Technology. It all started when I played...</p>
+    <p>Games are what inspired me to do programming!</p>
   </div>
 </div>
   <div class = "Form">
@@ -71,7 +70,7 @@
   <div class = "socialMediaLinks">
     <a href="https://www.reddit.com/user/Lmao5"><i class="fab fa-reddit"></i></a>
     <a href="https://github.com/Lmao5"><i class="fab fa-github"></i></a>
-    <a href="#"><img src ="" alt = "instagram logo"</a>
+    <a href="https://www.instagram.com/heylmaaao/"><i class="fab fa-instagram"></i></a>
 
   </div>
   <div>
@@ -79,6 +78,26 @@
   </div>
   </body>
   <script type="text/javascript">
+  var app = document.getElementById('typewriter');
 
+  var typewriter = new Typewriter(app, {
+      loop: true
+  });
+
+  typewriter.typeString('Hello there!<br>This is Hasan')
+      .pauseFor(2500)
+      .deleteAll()
+      .typeString('New to Python')
+      .pauseFor(2500)
+      .deleteChars(6)
+      .typeString('HTML')
+      .pauseFor(2500)
+      .deleteChars(4)
+      .typeString('Javascript')
+      .pauseFor(2500)
+      .deleteChars(10)
+      .typeString('CSS')
+      .pauseFor(2500)
+      .start();
   </script>
 </html>
