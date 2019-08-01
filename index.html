@@ -5,69 +5,59 @@
     <title>This is Hasan</title>
     <link rel="stylesheet" type="text/css" href="index.css"/>
     <link rel="stylesheet" type="text/css" href="common.css"/>
+    <link rel="stylesheet" type="text/css" href="bulma.css"/>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script src="typerwriter.js"></script>
   </head>
-  <body>
-    <div class="colorInside">
+  <body style="background-color: rgb(42,44,48);padding:0px 200px;">
   <header>
     <nav>
       <ul>
-        <li><a href = 'index.html' class= "current">Home.html</a></li>
-        <li><a href="About Me.html" class="notChosen">About Me.css</a></li>
-        <li><a href = "Work.html" class="notChosen">Work.js</a></li>
-        <li><a href = "Game.html" class="notChosen">Game.py</a></li>
-        <li><a href ="Form.html" class="notChosen">Contact Us.php</a></li>
+        <li><a href = '/' class= "current">Home</a></li>
+        <li><a href="About Me.html" class="notChosen">About Me</a></li>
+        <li><a href = "Work.html" class="notChosen">Work</a></li>
+        <li><a href = "Game.html" class="notChosen">Game</a></li>
+        <li><a href ="Form.html" class="notChosen">Contact Us</a></li>
       </ul>
     </nav>
-    </header>
-    <div class = 'firstTitle'>
-    <h1 id= "typewriter">
+  </header>
+  <div class="introTitle" style="height:90vh;">
+  <header class="section">
+    <div class="container">
+      <div class="columns">
+      <div class="column is-two-thirds" style="color:white;">
+        <h1 id = "typewriter" style="color:rgb(55,175,184);font-size:5em;">
+        </h1>
+      </div>
+      <div class="column is-one-thirds">
+        <img src="Images\c48.jpg" alt="picture of Hasan"/>
+      </div>
+    <!--<div class = 'firstTitle'>-->
     </h1>
-    <img src="Images\c48.jpg" alt="picture of Hasan"/>
   </div>
-  <!-- <div class="AboutMe">
-      <a href = "About Me.html"><h2>About Me</h2></a>
-      <p>I am currently studying in <span><a href="https://www.nyp.edu.sg/">Nanyang Polytechnic</a></span>&nbspas a Year 1 student in Diploma of Information Technology.<br>I plan to specialise
-      in A.I(Artificial Intelligence) and continue to further my studies into university.<br>Eventually,I plan to work in a big tech firm or start up a company of my own.
-       I used to be a member of the InfoComm Club in <a href ="https://regentsec.moe.edu.sg/">Regent Secondary School</a> because I was interested in the field of IT and hoping that I am exposed to it as soon as possible.</p>
-  </div> -->
-  <div class="Work">
-    <a href = "Work.html"><h2 style = "text-align: left;">Works</h2></a>
-    <nav>
-      <ul>
-      <li><a href="Web Dev Assignment.html"><img src = "Images\Capture.PNG" alt = "photo of website"/></a>
-      <p>This Website</p></li>
-      <li><a href="Work.html"><img src="Images\my-project-code-picture.png" alt="photo of first project"/></a>
-      <p>First Project</p></li>
-      <li><a href="#"><img src="" alt=""></a>
-        <p></p></li>
-    </ul>
-    </nav>
-  </div>
-  <div class="Games">
-    <a href="Game.html"><h2>Games</h2></a>
-    <i class="fas fa-gamepad" style="width:150px;height:150px;"></i>
-    <p>Games are what inspired me to do programming!</p>
-  </div>
+  </header>
 </div>
-  <footer>
-    <p style = "font-family:Lekton,sans-serif; color:white;text-align:center;">Made by Hasan</p>
+</section>
+  <footer class="footer" style="background-color: rgb(42,44,48);">
+    <p style = "color:white;text-align:center;">Made by Hasan</p>
     <div class = "socialMediaLinks">
-      <a href="https://www.reddit.com/user/Lmao5"><i class="fab fa-reddit"style="width:25px;height:25px;"></i></a>
-      <a href="https://github.com/Lmao5"><i class="fab fa-github"style="width:25px;height:25px;"></i></a>
-      <a href="https://www.instagram.com/heylmaaao/"><i class="fab fa-instagram"style="width:25px;height:25px;"></i></a>
+        <div style="padding-top:20px;">
+      <a href="https://www.reddit.com/user/Lmao5"><i class="fab fa-reddit fa-3x" style="color:rgb(55,175,184);"></i></a>
+      <a href="https://github.com/Lmao5"><i class="fab fa-github fa-3x" style="color:rgb(55,175,184);"></i></a>
+      <a href="https://www.instagram.com/heylmaaao/"><i class="fab fa-instagram fa-3x" style="color:rgb(55,175,184);"></i></a>
     </div>
+  </div>
   </footer>
+  </div>
   </body>
-  <script type="text/javascript"style="margin:0px;padding:0px;">
+  <script type="text/javascript">
   var app = document.getElementById('typewriter');
 
   var typewriter = new Typewriter(app, {
       loop: true
   });
 
-  typewriter.typeString("Hello there!<br>M'Lady")
+  typewriter.typeString("Hello there!<br>I am Hasan")
       .pauseFor(2500)
       .deleteAll()
       .typeString('New to Python')
@@ -82,5 +72,6 @@
       .typeString('CSS')
       .pauseFor(2500)
       .start();
+
   </script>
 </html>

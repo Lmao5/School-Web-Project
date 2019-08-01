@@ -1,12 +1,12 @@
 /* Google Fonts */
-@import url(https://fonts.googleapis.com/css?family=Lekton);
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
 html{
   background-color: rgb(42, 44, 48);
   margin-top: 0px;
   margin-left: 100px;
   margin-right: 100px;
   margin-bottom:0px;
-  font-family: Lekton,sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   color:white;
 }
 body{
@@ -42,7 +42,7 @@ header nav ul li a{
     color:white;
     display: inline-block;
     text-decoration: none;
-    font-family: Lekton,sans-serif;
+    font-family: 'Ubuntu', sans-serif;
   }
 header nav ul li .current{
   padding: 5px;
@@ -69,7 +69,7 @@ a:hover{
   margin-left: 10px;
   margin-right: 10px;
   font-size: 16px;
-  font-family: Lekton,sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   color: white;
   width: auto;
   height: auto;

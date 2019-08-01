@@ -1,13 +1,11 @@
 /* Google Fonts */
 .firstTitle{
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-bottom: 5px;
   font-size: 2em;
   color:white;
   font-family:Lekton,sans-serif;
+  width: 50%;
 }
-.firstTitle img{
+img{
   height:200px;
   width:200px;
   display: inline-block;
@@ -83,14 +81,4 @@ header nav ul li a.notChosen{
   border-color: white;
   border-style: solid;
   border-color: white;
-}
-.Games{
-  margin-left: 5px;
-  text-align: left;
-  font-size: 20px;
-  font-family: Lekton,sans-serif;
-  color: white;
-}
-.Games img{
-
 }

@@ -12,22 +12,22 @@
     <link rel="stylesheet" type="text/css" href="bulma.css"/>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   </head>
-  <body style="background-color: rgb(42,44,48);color:white;font-family:Lekton,sans-serif;padding:0px 200px;">
+  <body style="background-color: rgb(42,44,48);padding:0px 200px;">
     <header>
       <nav>
         <ul>
-          <li><a href = 'index.html' class= "notChosen">Home.html</a></li>
-          <li><a href="About Me.html" class="notChosen">About Me.css</a></li>
-          <li><a href = "Work.html" class="notChosen">Work.js</a></li>
-          <li><a href = "Game.html" class="notChosen">Game.py</a></li>
-          <li><a href ="Form.html" class="current">Contact Us.php</a></li>
+          <li><a href = 'index.html' class= "notChosen">Home</a></li>
+          <li><a href="About Me.html" class="notChosen">About Me</a></li>
+          <li><a href = "Work.html" class="notChosen">Work</a></li>
+          <li><a href = "Game.html" class="notChosen">Game</a></li>
+          <li><a href ="Form.html" class="current">Contact Us</a></li>
         </ul>
       </nav>
       </header>
       <div class="container"style="background-color: rgb(42,44,48);padding:auto;margin:0px 100px;">
       <form name="contact" method="POST" data-netlify="true">
         <fieldset class="fieldset">
-        <legend class="legend" style="font-size:2em;">Contact Us!</legend>
+        <legend class="legend has-text-white" style="font-size:2em;">Contact Us!</legend>
           <div class="field"><label class="label color has-text-white">First Name:
           <input type="text" name = "firstName" class="input"required placeholder="John"/></label></div>
         <div class="field"><label class="label has-text-white">Last Name:
@@ -36,16 +36,18 @@
           <input type="email"name = "email" class="input"placeholder="someone@example.com" required/></label></div>
           <div class="field"><label class="label has-text-white">Message:
           <textarea name ="message"class="textarea" placeholder="Say something here!"></textarea></label></div>
-          <div class="control"><button type = "submit"class="button is-link" style = "font-family:Lekton,sans-serif;background-color: rgb(53, 57, 64); color:white;">Submit</button></div>
+          <div class="control"><button type = "submit"class="button is-link" style = "background-color: rgb(53, 57, 64); color:white;">Submit</button></div>
           </fieldset>
       </form>
       </div>
       <footer class="footer" style="background-color: rgb(42,44,48);">
-        <p style = "font-family:Lekton,sans-serif; color:white;text-align:center;">Made by Hasan</p>
+        <p style = "color:white;text-align:center;">Made by Hasan</p>
         <div class = "socialMediaLinks">
+          <div style="padding-top:20px;">
           <a href="https://www.reddit.com/user/Lmao5"><i class="fab fa-reddit fa-3x" style="color:rgb(55,175,184);"></i></a>
           <a href="https://github.com/Lmao5"><i class="fab fa-github fa-3x"style="color:rgb(55,175,184);"></i></a>
           <a href="https://www.instagram.com/heylmaaao/"><i class="fab fa-instagram fa-3x"style="color:rgb(55,175,184);"></i></a>
+        </div>
         </div>
       </footer>
   </body>
