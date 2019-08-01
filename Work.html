@@ -17,14 +17,290 @@
           <li><a href ="Form.html" class="notChosen">Contact Us.php</a></li>
         </ul>
       </nav>
-      </header>
-      <p>Hello</p>
+    </header><div>
+      <h1 style="text-align:center;">Works</h1>
+      <p style="text-align:center;">All of these works are created by me!</p>
+    <h2 style="text-align:center;">Book Store Program</h2>
+  <p class="colorInside" style="padding:20px;border-radius:5px;">
+allBooks = {}<br>
+singleBooks = {}<br>
+bookQuantity = 0<br>
+allDates = {}<br>
+holdAllBooks = {}<br>
+singleDate = {}<br>
+monthDate = {}<br>
+yearDate = {}<br>
+infoSales = {}<br>
+numberOfSalesTakenPlace = {}<br>
+salesTakenPlaceDaily = {}<br>
+while True:<br>
+    print("Welcome to Ezy Book Store, select the following option to continue: \n1. Add a new shipment")<br>
+    print("2. Add a new sales \n3. Display revenue")<br>
+    print("4. Check inventory of books \n0. Exit program")<br>
+    option = input("Please enter your option: ")<br>
+    try:<br>
+        option = int(option)<br>
+        if option == 0:                   # stops everything<br>
+            break<br>
+        elif option == 1:<br>
+            isbn = input("Enter serial number of book:")<br>
+            while True:<br>
+                if isbn in allBooks:<br>
+                    quantity = input("Enter quantity of book to add or subtract:")  # is used to change quantity of books correctly if quantity added is wrong<br>
+                    try:<br>
+                        quantity = int(quantity)<br>
+                        print("Quantity is valid.")<br>
+                        books = allBooks[isbn]<br>
+                        books['quantity'] = quantity + books['quantity']<br>
+                        break<br>
+                        # invalid if quantity added is less than or equal to zero<br>
+                    except:<br>
+                        print("You have entered an invalid quantity.")<br>
+                        continue<br>
+                else:        # if isbn is new<br>
+                    try:<br>
+                        if isbn.isspace():  # check if input is empty<br>
+                            print("Serial number of book is invalid.")<br>
+                            continue<br>
+                        else:<br>
+                            singleBooks['ISBN'] = isbn<br>
+                            while True:<br>
+                                title = input("Enter title of book: ")<br>
+                                if title.isspace():<br>
+                                    print("Title of book is invalid.")<br>
+                                    continue<br>
+                                else:<br>
+                                    singleBooks['title'] = title<br>
+                                    break<br>
+                            while True:<br>
+                                author = input("Enter Author of book: ")<br>
+                                if author.isspace():<br>
+                                    print("Author name is invalid")<br>
+                                    continue<br>
+                                else:<br>
+                                    singleBooks['author'] = author<br>
+                                    break<br>
+                            while True:<br>
+                                price = input("Enter price of book:")<br>
+                                try:<br>
+                                    price = float(price)<br>
+                                    if price > 0:<br>
+                                        singleBooks['price'] = price<br>
+                                        break<br>
+                                    else:<br>
+                                        print("You have entered an invalid price.")<br>
+                                except:<br>
+                                    print("You have entered an invalid price.")<br>
+                            while True:<br>
+                                quantity = input("Enter quantity of book: ")<br>
+                                try:<br>
+                                    quantity = int(quantity)<br>
+                                    if quantity < 0:<br>
+                                        print("Quantity is invalid.")<br>
+                                        continue<br>
+                                    else:<br>
+                                        singleBooks['quantity'] = quantity<br>
+                                        break<br>
+                                except:<br>
+                                    print("Quantity is invalid.")<br>
+                            allBooks[isbn] = singleBooks<br>
+                            holdAllBooks = allBooks<br>
+                            singleBooks = {}<br>
+                            quantity = 0<br>
+                            break<br>
+                    except:<br>
+                        print("You have entered an invalid serial number.")<br><br>
+
+        elif option == 2:<br>
+            numberOfSalesTakenPlaceNumber = 0<br>
+            totalSellQuantity = 0<br>
+            totalSales = 0<br>
+            if allBooks == {}:<br>
+                print("There is no book for sale.")             # if no books in inventory<br>
+                continue<br>
+            else:<br>
+                while True:<br>
+                    singleDateInput = input("Enter date of sales (DD): ")        # options<br>
+                    monthDateInput = input("Enter month of sales(MM): ")<br>
+                    yearDateInput = input("Enter year of sales(YYYY): ")<br>
+                    if singleDateInput.isspace() and monthDateInput.isspace() and yearDateInput.isspace():<br>
+                        print("Please do not leave any dates blank.")<br>
+                        continue<br>
+                    elif singleDateInput.isalnum() and monthDateInput.isalnum() and yearDateInput.isalnum()\<br>
+                        and len(singleDateInput) == 2 and len(monthDateInput) == 2 and len(yearDateInput) == 4\<br>
+                            and int(monthDateInput) <= 12 and int(singleDateInput) > 0 and int(monthDateInput)> 0:<br>
+                        singleDateInput = int(singleDateInput)<br>
+                        monthDateInput = int(monthDateInput)<br>
+                        yearDateInput = int(yearDateInput)<br>
+                        while True:<br>
+                            isbn = input("Enter isbn of book: ")<br>
+                            infoSales['isbn'] = isbn<br>
+                            if isbn in allBooks:<br>
+                                sellQuantity = input("Enter quantity of books to sell: ")<br>
+                                try:<br>
+                                    sellQuantity = int(sellQuantity)<br>
+                                    books = allBooks[isbn]<br>
+                                    if books['quantity'] == 0:<br>
+                                        print("There is no more books titled", books['title'])<br>
+                                        break<br>
+                                    elif sellQuantity > books['quantity']:<br>
+                                        print("More books sold than existing ones.")<br>
+                                        continue<br>
+                                    elif sellQuantity == 0:<br>
+                                        print("Number of books sold is zero.")<br>
+                                        continue<br>
+                                    else:<br>
+                                        books = allBooks[isbn]<br>
+                                        print('Quantity is valid.')<br>
+                                        sales = sellQuantity * books['price']<br>
+                                        infoSales['dailySales'] = sales<br>
+                                        sales = int(sales)<br>
+                                        books['quantity'] = books['quantity'] - sellQuantity<br>
+                                        infoSales['Quantity sold'] = sellQuantity<br>
+                                        print("Sale of book is:${:.2f}".format(infoSales['dailySales']))<br>
+                                        infoSales['title'] = books['title']<br>
+                                        infoSales['price'] = books['price']<br>
+                                        salesTakenPlaceDaily[isbn] = infoSales<br>
+                                        singleDate[singleDateInput] = salesTakenPlaceDaily<br>
+                                        monthDate[monthDateInput] = singleDate<br>
+                                        yearDate[yearDateInput] = monthDate<br>
+                                        allDates['Read as YYYY/MM/DD,isbn,infoSales'] = yearDate<br>
+                                        if books['quantity'] == 0:<br>
+                                            print("There is no more books titled", books['title'])<br>
+                                        else:<br>
+                                            print("There are", books['quantity'], "books left.")<br>
+                                    # dateSingleBooks['date'] = date<br>
+                                except:<br>
+                                    print("Please enter a valid quantity.")<br>
+                            elif isbn.isspace():<br>
+                                print("Serial number of book is empty.")<br>
+                                continue<br>
+                            elif isbn in allBooks and yearDateInput in allDates and monthDateInput in allDates and singleDateInput in allDates:  # to update dailySales and quantity sold on same day<br>
+                                sellQuantity = input("Enter quantity of books to sell: ")<br>
+                                try:<br>
+                                    sellQuantity = int(sellQuantity)<br>
+                                    books = allBooks[isbn]<br>
+                                    totalDailySales = salesTakenPlaceDaily['dailySales']<br>
+                                    totalDailyQuantity = salesTakenPlaceDaily['Quantity sold']<br>
+                                    if books['quantity'] == 0:<br>
+                                        print("There is no more books titled", books['title'])<br>
+                                        break<br>
+                                    elif sellQuantity > books['quantity']:<br>
+                                        print("More books sold than existing ones.")<br>
+                                        continue<br>
+                                    elif sellQuantity == 0:<br>
+                                        print("Number of books sold is zero.")<br>
+                                        continue<br>
+                                    else:<br>
+                                        print('Quantity is valid.')<br>
+                                        sales = sellQuantity * books['price']<br>
+                                        sales = int(sales)<br>
+                                        totalDailySales['dailySales'] = totalDailySales['dailySales']+sales<br>
+                                        infoSales['dailySales'] = totalDailySales['dailySales']<br>
+                                        books['quantity'] = books['quantity'] - sellQuantity<br>
+                                        totalDailyQuantity['Quantity sold'] = totalDailyQuantity['Quantity sold']+sellQuantity<br>
+                                        infoSales['Quantity sold'] = totalDailyQuantity['Quantity sold']<br>
+                                        print("Sale of book is:${:.2f}".format(infoSales['dailySales']))<br>
+                                        if books['quantity'] == 0:<br>
+                                            print("There is no more books titled", books['title'])<br>
+                                        else:<br>
+                                            print("There are", books['quantity'], "books left.")<br>
+                                except:<br>
+                                    print("Please enter a valid quantity.")<br>
+                            else:<br>
+                                print("ISBN is not found.")<br>
+                                continue<br>
+                            break<br>
+                    else:<br>
+                        print("Please enter a correct date.")<br>
+                        continue<br>
+                    break<br>
+        elif option == 3:<br>
+            if yearDate != {}:<br>
+                chooseReport = input("Check monthly(MM) or daily sales(DD) or yearly(YYYY) report?")<br>
+                if chooseReport == 'DD':<br>
+                    checkYearDateInput = int(input("Enter year (YYYY):"))<br>
+                    if checkYearDateInput in allDates['Read as YYYY/MM/DD,isbn,infoSales']:<br>
+                        print("Year", checkYearDateInput, "exists.")<br>
+                        checkMonthDateInput = int(input("Enter month (MM):"))<br>
+                        if checkMonthDateInput in yearDate[checkYearDateInput]:<br>
+                            print("Month", checkMonthDateInput, "exists.")<br>
+                            checkDateInput = int(input("Enter date (DD):"))<br>
+                            if checkDateInput in monthDate[checkMonthDateInput]:<br>
+                                print("Date", checkDateInput, "exists.")<br>
+                                Sales = 0<br>
+                                totalSales = 0<br>
+                                for checkDateInput in singleDate:<br>
+                                    Sales = infoSales['dailySales']<br>
+                                    totalSales = totalSales + Sales<br>
+                                print("Total daily sales of",checkDateInput, "/", checkMonthDateInput, "/", checkYearDateInput,"is ${:.2f}".format(totalSales))<br>
+                            else:<br>
+                                print("Date does not exist.")<br>
+                                continue<br>
+                        else:<br>
+                            print("Month does not exist.")<br>
+                            continue<br>
+                    else:<br>
+                        print("Year does not exist.")<br>
+                        continue<br>
+                elif chooseReport == 'MM':<br>
+                    checkYearDateInput = int(input("Enter year (YYYY):"))<br>
+                    if checkYearDateInput in allDates['Read as YYYY/MM/DD,isbn,infoSales']:<br>
+                        print("Year", checkYearDateInput,"exists.")<br>
+                        checkMonthDateInput = int(input("Enter month (MM):"))<br>
+                        if checkMonthDateInput in yearDate[checkYearDateInput]:<br>
+                            print("Month", checkMonthDateInput, "exists.")<br>
+                            Sales = 0<br>
+                            totalSales = 0<br>
+                            for checkMonthDateInput in monthDate:<br>
+                                Sales = infoSales['dailySales']<br>
+                                totalSales = totalSales + Sales<br>
+                            print("Total monthly sales of", checkMonthDateInput, "/", checkYearDateInput, "is ${:.2f}".format(totalSales))<br>
+                        else:<br>
+                            print("Month does not exist.")<br>
+                    else:<br>
+                        print("Year does not exist.")<br>
+                elif chooseReport == 'YYYY':<br>
+                    checkYearDateInput = int(input("Enter year (YYYY):"))<br>
+                    if checkYearDateInput in allDates['Read as YYYY/MM/DD,isbn,infoSales']:<br>
+                        print("Year exists")<br>
+                        Sales = 0<br>
+                        totalSales = 0<br>
+                        for checkYearDateInput in yearDate:<br>
+                            Sales = infoSales['dailySales']<br>
+                            totalSales = totalSales + Sales<br>
+                        print("Total yearly sales of", checkYearDateInput, "is ${:.2f}".format(totalSales))<br>
+                    else:<br>
+                        print('No sales taken place during the year', checkYearDateInput, '.')<br>
+                else:<br>
+                    print('Please enter a correct choice.')<br>
+            else:<br>
+                print("There are no sales yet.")<br>
+        elif option == 4:<br>
+            if allBooks == {}:              # if no records at all<br>
+                print("No books yet")<br>
+            else:
+                print("Checking all remaining books in inventory.")<br>
+                print(allBooks)<br>
+                print("Checking all sales of books.")<br>
+                print(allDates)<br>
+    except:<br>
+        print("Please enter a valid option.")          # loops back if entered wrong option<br>
+        continue
+</p>
+</div>
+<div>
+<p>This program aims to compute the number of unsold books in the store, calculate sales of books as well as checking data of past sales. This program however still<span style="color:red"> needs fixes </span>as there are still problems regarding the way how I implemented the book inventory system since I built this program from scratch.<br>
+You are allowed to copy and use this program while also crediting me but<span style="color:red"> I am not responsible for any loss if this program is used. </span>Should you need enquires about the code, feel free to contact us!</p></div>
+<h2 style="text-align:center;">This website</h2>
+<p>This website uses a powerful yet compact typewriter.js by <a href="https://safi.me.uk/typewriterjs/"> Tameem Safi.</a>
+I also decided to use <a href ="https://bulma.io/">bulma.css</a> to design parts of this website while creating my own css to design this 'programming theme' for thiis website.</p>
       <footer>
         <p style = "font-family:Lekton,sans-serif; color:white;text-align:center;">Made by Hasan</p>
         <div class = "socialMediaLinks">
-          <a href="https://www.reddit.com/user/Lmao5"><i class="fab fa-reddit"style="width:25px;height:25px;"></i></a>
-          <a href="https://github.com/Lmao5"><i class="fab fa-github"style="width:25px;height:25px;"></i></a>
-          <a href="https://www.instagram.com/heylmaaao/"><i class="fab fa-instagram"style="width:25px;height:25px;"></i></a>
+          <a href="https://www.reddit.com/user/Lmao5"><i class="fab fa-reddit fa-3x"></i></a>
+          <a href="https://github.com/Lmao5"><i class="fab fa-github fa-3x"></i></a>
+          <a href="https://www.instagram.com/heylmaaao/"><i class="fab fa-instagram fa-3x"></i></a>
         </div>
       </footer>
       </body>
