@@ -4,20 +4,10 @@
     <meta charset="utf-8">
     <title>Work</title>
     <link rel="stylesheet"type="text/css" href="common.css">
+    <link rel="stylesheet"type="text/css" href="bulma.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <style>
-    .title{
-      font-size: 40px;
-    }
-    .smallerTitle{
-      font-size: 30px;
-    }
-    .normalText{
-      font-size: 20px;
-    }
-  </style>
   </head>
-  <body style="color:white;">
+  <body style="color:white; padding:0px 200px;"class="has-background-secondary">
     <header>
       <nav>
         <ul>
@@ -28,11 +18,21 @@
           <li><a href ="Form.html" class="notChosen">Contact Us</a></li>
         </ul>
       </nav>
-    </header><div>
-      <h1 class="title"style="text-align:center;">Works</h1>
-      <p class="normalText"style="text-align:center;">All of these works are created by me!</p>
-    <h2 class = "smallerTitle"style="text-align:center;">Book Store Program</h2>
-  <pre class="colorInside normalText" style="border-radius:5px;font-family: Lekton,sans-serif;">
+    </header>
+    <section class="section">
+      <h1 class="title is-1">Achievements</h1>
+      <div class="container">
+        <p class="subtitle">During my time in secondary school, I have managed to obtain the top 20% in my school for several terms</p>
+        <!-- Put table later here!-->
+      </div>
+    </section>
+    <section class="section">
+      <h1 class="title is-1"style="text-align:center;">Works</h1>
+      <p class="subtitle"style="text-align:center;">All of these works are created by me!</p>
+        <div class="container">
+    <h2 class = "title is-2"style="text-align:center;">Book Store Program</h2>
+  </div>
+  <pre class="colorInside subtitle" style="border-radius:5px;font-family: Lekton,sans-serif;color:white;">
     <code>
       allBooks = {}
       singleBooks = {}
@@ -328,13 +328,19 @@
               For more information, please refer to http://unlicense.org
       </code>
 </pre>
-</div>
-<div>
-<p class="normalText">This program aims to compute the number of unsold books in the store, calculate sales of books as well as checking data of past sales. This program however still<span style="color:red"> needs fixes </span>as there are still problems regarding the way how I implemented the book inventory system since I built this program from scratch.<br>
+<div class="container">
+<p class="subtitle">This program aims to compute the number of unsold books in the store, calculate sales of books as well as checking data of past sales. This program however still<span style="color:red"> needs fixes </span>as there are still problems regarding the way how I implemented the book inventory system since I built this program from scratch.<br>
 You are allowed to copy and use this program while also crediting me but<span style="color:red"> I am not responsible for any loss if this program is used. </span>Should you need enquires about the code, feel free to contact us!</p></div>
-<h2 class="smallerTitle"style="text-align:center;">This website</h2>
-<p class="normalText">This website uses a powerful yet compact typewriter.js by <a href="https://safi.me.uk/typewriterjs/"> Tameem Safi.</a>
-I also decided to use <a href ="https://bulma.io/">bulma.css</a> to design parts of this website while creating my own css to design this 'programming theme' for this website.</p>
+</div></section>
+<section class="section">
+  <div class="container">
+    <h2 class="title is-2"style="text-align:center;">This website</h2></div>
+      <div class="container">
+        <p class="subtitle">This website uses a powerful yet compact typewriter.js by <a href="https://safi.me.uk/typewriterjs/"> Tameem Safi.</a>
+          I also decided to use <a href ="https://bulma.io/">bulma.css</a> to design parts of this website while creating my own css to design this 'programming theme' for this website.
+</p>
+  </div>
+    </section>
       <footer>
         <p style = "color:white;text-align:center;">Made by Hasan</p>
         <div class = "socialMediaLinks">
