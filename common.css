@@ -6,6 +6,8 @@ html{
   margin-left: 100px;
   margin-right: 100px;
   margin-bottom:0px;
+  font-family: Lekton,sans-serif;
+  color:white;
 }
 body{
   margin-top: 0px;
@@ -57,6 +59,9 @@ a{
     color:rgb(55,175,184);
     text-decoration: none;
   }
+a:hover{
+  color:rgb(55,175,184);
+}
 .socialMediaLinks{
   padding-bottom: 0px;
   margin-bottom: 0px;
