@@ -15,15 +15,6 @@ body{
   margin-right: 100px;
   margin-bottom:0px;
 }
-.colorInside{
-  background-color: rgb(53, 57, 64);
-}
-.colorInside div{
-  padding:25px;
-}
-footer .colorInside{
-  margin-bottom: 0px;
-}
 header nav{
   margin: auto;
   background-color:rgb(42, 44, 48);
