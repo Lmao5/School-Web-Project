@@ -1,14 +1,6 @@
-/* Google Fonts */
-.firstTitle{
-  font-size: 2em;
-  color:white;
-  font-family:Lekton,sans-serif;
-  width: 50%;
-}
 img{
   height:200px;
   width:200px;
   display: inline-block;
-  border-width: 1px;
   border-radius: 100px 100px 100px 100px;
 }

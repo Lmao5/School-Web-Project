@@ -7,7 +7,6 @@ html{
   margin-right: 100px;
   margin-bottom:0px;
   font-family: 'Ubuntu', sans-serif;
-  color:white;
 }
 body{
   margin-top: 0px;
@@ -23,7 +22,7 @@ header nav ul{
   width:auto;
   list-style-type: none;
   margin: 0px auto;
-  padding: 0px;
+  padding: 0px auto;
 }
 header nav ul li{
     display:inline-block;
@@ -47,8 +46,8 @@ header nav ul li a.notChosen{
   padding: 5px;
 }
 a{
-    color:rgb(55,175,184);
-    text-decoration: none;
+  color:rgb(55,175,184);
+  text-decoration: none;
   }
 a:hover{
   color:rgb(55,175,184);
@@ -61,7 +60,6 @@ a:hover{
   margin-right: 10px;
   font-size: 16px;
   font-family: 'Ubuntu', sans-serif;
-  color: white;
   width: auto;
   height: auto;
   text-align: center;
