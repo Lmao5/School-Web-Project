@@ -20,7 +20,7 @@
       </nav>
       </header>
       <div class="container"style="padding:auto;margin:0px 100px;">
-      <form name="contact" method="POST" data-netlify="true">
+      <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
         <fieldset class="fieldset">
         <legend class="legend has-text-white" style="font-size:2em;">Contact Us!</legend>
           <div class="field"><label class="label color has-text-white">First Name:
@@ -31,7 +31,9 @@
           <input type="email"name = "email" class="input"placeholder="someone@example.com" required/></label></div>
           <div class="field"><label class="label has-text-white">Message:
           <textarea name ="message"class="textarea" placeholder="Say something here!"></textarea></label></div>
-          <div class="control"><button type = "submit"class="button is-link" style = "background-color: rgb(53, 57, 64); color:white;">Submit</button></div>
+          <div class="control">
+            <div data-netlify-recaptcha="true"></div>
+            <button type = "submit"class="button is-link" style = "background-color: rgb(53, 57, 64); color:white;">Submit</button></div>
           </fieldset>
       </form>
       </div>
