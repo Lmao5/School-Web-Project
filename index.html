@@ -1,70 +1,110 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <title>I am Hasan</title>
-    <link rel="stylesheet" type="text/css" href="css/index.css"/>
-    <link rel="stylesheet" type="text/css" href="css/common.css"/>
-    <link rel="stylesheet" type="text/css" href="css/bulma.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!--- Fonts -->
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <script src="js/typerwriter.js"></script>
-  </head>
-  <body class="has-background-secondary"style="padding:0px 200px;">
-    <div style="height:100vh;">
-  <header>
-    <nav>
-      <ul>
-        <li><a href = '/' class= "current">Home</a></li>
-        <li><a href="About Me.html" class="notChosen">About Me</a></li>
-        <li><a href = "Work.html" class="notChosen">Work</a></li>
-        <li><a href = "Game.html" class="notChosen">Game</a></li>
-        <li><a href ="Form.html" class="notChosen">Contact Us</a></li>
-      </ul>
-    </nav>
-  </header>
-  <section class="section columns">
-      <div class="column is-two-thirds container">
-        <h1 id = "typewriter" style="color:rgb(55,175,184);font-size:5em;">
-        </h1>
-      </div>
-      <div class="column is-one-thirds container">
-        <img src="Images\c48.jpg" alt="picture of Hasan"/>
-      </div>
-  </section>
-  <footer class="footer has-background-secondary">
-    <p class="has-text-white has-text-centered">Made by Hasan</p>
-    <div class = "socialMediaLinks">
-        <div style="padding-top:20px;">
-      <a href="https://www.reddit.com/user/Lmao5"><i class="fab fa-reddit fa-3x"></i></a>
-      <a href="https://github.com/Lmao5"><i class="fab fa-github fa-3x"></i></a>
-      <a href="https://www.instagram.com/heylmaaao/"><i class="fab fa-instagram fa-3x"></i></a>
+
+    <title>Home</title>
+    <style>
+        .jumbotron {
+            color: white;
+            background-color: grey;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            text-align: center;
+            position: relative;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+        }
+
+        .jumbotron h1 {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .jumbotron h2 {
+            margin: 0;
+            position: absolute;
+            top: 56%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <!--- Remember to finish this homepage - Hasan 23/09/2020 -->
+            <!-- <h1 class="display-4" id="typewriter"></h1> -->
+            <h1 class="display-4">We'll be back soon!</h1>
+            <h2>Stay Tuned!</h2>
+        </div>
     </div>
-  </div>
-  </footer>
-  </div>
-  </body>
-  <script type="text/javascript">
-  var app = document.getElementById('typewriter');
+    <!-- <footer>
+        <div class="container-fluid">
+            <p>dwaafsafdsafe</p>
+        </div>
+    </footer> -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="js/typerwriter.js"></script>
 
-  var typewriter = new Typewriter(app, {
-      loop: true
-  });
+    <script type="text/javascript">
+        var app = document.getElementById('typewriter');
 
-  typewriter.typeString("Hello there!<br>I am Hasan")
-      .pauseFor(2500)
-      .deleteAll()
-      .typeString('New to Python')
-      .pauseFor(2500)
-      .deleteChars(6)
-      .typeString('HTML')
-      .pauseFor(2500)
-      .deleteChars(4)
-      .typeString('Javascript')
-      .pauseFor(2500)
-      .deleteChars(10)
-      .typeString('CSS')
-      .pauseFor(2500)
-      .start();
+        var typewriter = new Typewriter(app, {
+            loop: true
+        });
 
-  </script>
+        typewriter.typeString("I am Hasan!")
+            .pauseFor(2500)
+            .deleteAll()
+            .typeString('Aspiring Data Scientist')
+            .pauseFor(2500)
+            .deleteAll()
+            .typeString('A student of NYP DIT')
+            .pauseFor(2500)
+            .deleteAll()
+            // .typeString('Javascript')
+            // .pauseFor(2500)
+            // .deleteChars(10)
+            // .typeString('CSS')
+            // .pauseFor(2500)
+            .start();
+
+    </script>
+    <script>
+        $(".jumbotron").css({ height: $(window).height() + "px" });
+
+        $(window).on("resize", function () {
+            $(".jumbotron").css({ height: $(window).height() + "px" });
+        });
+
+    </script>
+</body>
+
 </html>
