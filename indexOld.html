@@ -7,7 +7,6 @@
     <link rel="stylesheet" type="text/css" href="css/common.css"/>
     <link rel="stylesheet" type="text/css" href="css/bulma.css"/>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <script src="js/typerwriter.js"></script>
   </head>
   <body class="has-background-secondary"style="padding:0px 200px;">
     <div style="height:100vh;">
@@ -17,7 +16,7 @@
         <li><a href = '/' class= "current">Home</a></li>
         <li><a href="About Me.html" class="notChosen">About Me</a></li>
         <li><a href = "Work.html" class="notChosen">Work</a></li>
-        <li><a href = "Game.html" class="notChosen">Game</a></li>
+        <!-- <li><a href = "Game.html" class="notChosen">Game</a></li> -->
         <li><a href ="Form.html" class="notChosen">Contact Us</a></li>
       </ul>
     </nav>
@@ -42,29 +41,30 @@
   </div>
   </footer>
   </div>
-  </body>
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   <script type="text/javascript">
-  var app = document.getElementById('typewriter');
-
-  var typewriter = new Typewriter(app, {
-      loop: true
-  });
-
-  typewriter.typeString("Hello there!<br>I am Hasan")
-      .pauseFor(2500)
-      .deleteAll()
-      .typeString('New to Python')
-      .pauseFor(2500)
-      .deleteChars(6)
-      .typeString('HTML')
-      .pauseFor(2500)
-      .deleteChars(4)
-      .typeString('Javascript')
-      .pauseFor(2500)
-      .deleteChars(10)
-      .typeString('CSS')
-      .pauseFor(2500)
-      .start();
-
-  </script>
+    var app = document.getElementById('typewriter');
+  
+    var typewriter = new Typewriter(app, {
+        loop: true
+    });
+  
+    typewriter.typeString("Hello there!<br>I am Hasan")
+        .pauseFor(2500)
+        .deleteAll()
+        .typeString('New to Python')
+        .pauseFor(2500)
+        .deleteChars(6)
+        .typeString('HTML')
+        .pauseFor(2500)
+        .deleteChars(4)
+        .typeString('Javascript')
+        .pauseFor(2500)
+        .deleteChars(10)
+        .typeString('CSS')
+        .pauseFor(2500)
+        .start();
+  
+    </script>
+  </body>
 </html>
