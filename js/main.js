@@ -6,3 +6,8 @@ if ('serviceWorker' in navigator){
         .catch(err => console.log(`Service Worker: Error: ${err}`))
     })
 }
+
+// function formProcessor() {
+//     var fullName = document.getElementById("fullName")
+//     alert(fullName)
+// }

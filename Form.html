@@ -6,6 +6,7 @@
   <title>Contact Us</title>
   <link rel="stylesheet" type="text/css" href="css/common.css" />
   <link rel="stylesheet" type="text/css" href="css/bulma.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.css"> -->
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 
@@ -24,17 +25,20 @@
     <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
       <fieldset class="fieldset">
         <legend class="legend has-text-white" style="font-size:2em;">Contact Us!</legend>
-        <div class="field"><label class="label color has-text-white">Full Name:
-            <input type="text" name="firstName" class="input" placeholder="John Doe" required/></label></div>
+        <div class="field"><label class="label color has-text-white" for="fullName">Full Name:
+            <input type="text" name="fullName" class="input" id="fullName" placeholder="John Doe" required /></label>
+        </div>
         <div class="field"><label class="label has-text-white" for="email">Email Address:
-            <input type="email" name="email" class="input" placeholder="someone@example.com" required /></label></div>
-        <div class="field"><label class="label has-text-white">Message:
-            <textarea name="message" class="textarea" placeholder="Say something here!" required></textarea></label></div>
+            <input type="email" name="email" class="input" id="email" placeholder="someone@example.com"
+              required /></label></div>
+        <div class="field"><label class="label has-text-white" for="message">Message:
+            <textarea name="message" class="textarea" id="message" placeholder="Say something here!"
+              required></textarea></label></div>
         <div class="control">
           <div data-netlify-recaptcha="true"></div>
           <br>
-          <button type="submit" class="button is-link"
-            style="background-color: rgb(53, 57, 64); color:white;">Submit</button>
+          <button type="submit" class="button is-link" style="background-color: rgb(53, 57, 64); color:white;"
+            onclick="formProcessor()">Submit</button>
         </div>
       </fieldset>
     </form>
@@ -43,7 +47,7 @@
     <p class="has-text-white has-text-centered">Made by Hasan</p>
     <div class="socialMediaLinks">
       <div style="padding-top:20px;">
-        <a href="https://www.reddit.com/user/Lmao5"><i class="fab fa-reddit fa-3x"></i></a>
+        <a href="#"><i class="fab fa-reddit fa-3x"></i></a>
         <a href="https://github.com/Lmao5"><i class="fab fa-github fa-3x"></i></a>
         <a href="https://www.instagram.com/heylmaaao/"><i class="fab fa-instagram fa-3x"></i></a>
       </div>

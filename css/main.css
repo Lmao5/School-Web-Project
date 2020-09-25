@@ -1,72 +1,73 @@
 /* Google Fonts */
 @import url(https://fonts.googleapis.com/css?family=Lekton);
-html{
-  background-color: rgb(42, 44, 48)
+html {
+  background-color: rgb(42, 44, 48);
 }
-body{
+body {
   margin-top: 0px;
   margin-left: 100px;
   margin-right: 100px;
-  background-color: rgb(42, 44 ,48);
+  background-color: rgb(42, 44, 48);
 }
-.colorInside{
+.colorInside {
   background-color: rgb(53, 57, 64);
 }
-.colorInside div{
-  padding:25px 25px 25px 25px;
+.colorInside div {
+  padding: 25px 25px 25px 25px;
 }
-.firstTitle{
+.firstTitle {
   margin-left: 5px;
   margin-right: 5px;
   margin-bottom: 5px;
   font-size: 2em;
-  color:white;
-  font-family:Lekton,sans-serif;
+  color: white;
+  font-family: Lekton, sans-serif;
 }
-.firstTitle img{
-  height:200px;
-  width:200px;
+
+.firstTitle img {
+  height: 200px;
+  width: 200px;
   display: inline-block;
   border-width: 1px;
   border-radius: 100px 100px 100px 100px;
 }
-header nav{
+header nav {
   margin: auto;
-  background-color:rgb(42, 44, 48);
+  background-color: rgb(42, 44, 48);
 }
-header nav ul{
-  width:auto;
+header nav ul {
+  width: auto;
   list-style-type: none;
   margin: 0px auto;
   padding: 0px;
 }
-header nav ul li{
-    display:inline-block;
-    text-align: center;
+header nav ul li {
+  display: inline-block;
+  text-align: center;
 }
-header nav ul li a{
-    color:white;
-    display: inline-block;
-    text-decoration: none;
-    font-family: Lekton,sans-serif;
-  }
-header nav ul li .current{
+header nav ul li a {
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  font-family: Lekton, sans-serif;
+}
+header nav ul li .current {
   padding: 5px;
-  margin: 0px,5px,0px,0px;
-  border-bottom: 3px solid rgb(55,175,184);
+  margin: 0px, 5px, 0px, 0px;
+  border-bottom: 3px solid rgb(55, 175, 184);
 }
-header nav ul li a.notChosen{
-  background-color: rgb(42,44,48);
-  border: 3px solid rgb(42,44,48);
-  margin: 0px,5px,0px,5px;
+header nav ul li a.notChosen {
+  background-color: rgb(42, 44, 48);
+  border: 3px solid rgb(42, 44, 48);
+  margin: 0px, 5px, 0px, 5px;
   padding: 5px;
 }
-.AboutMe{
+.AboutMe {
   margin-left: 5px;
   margin-right: 5px;
   text-align: left;
   font-size: 20px;
-  font-family: Lekton,sans-serif;
+  font-family: Lekton, sans-serif;
   color: white;
 }
 
@@ -79,79 +80,78 @@ header nav ul li a.notChosen{
   margin: auto;
   padding: auto;
 }
-.Work nav ul li{
+.Work nav ul li {
   display: inline-block;
   text-align: center;
   margin-left: 30px auto;
   margin-right: 30px auto;
 }
-a{
-  color:rgb(55,175,184);
+a {
+  color: rgb(55, 175, 184);
   text-decoration: none;
 }
 .Work {
   margin-left: 5px;
   font-size: 20px;
-  font-family: Lekton,sans-serif;
+  font-family: Lekton, sans-serif;
   color: white;
 }
-.Work img{
-  height:200px;
-  width:200px;
+.Work img {
+  height: 200px;
+  width: 200px;
   border-width: 1px;
   border-radius: 100px 100px 100px 100px;
   border-color: white;
   border-style: solid;
   border-color: white;
 }
-.Games{
+.Games {
   margin-left: 5px;
   text-align: left;
   font-size: 20px;
-  font-family: Lekton,sans-serif;
+  font-family: Lekton, sans-serif;
   color: white;
 }
-.Games img{
-
+.Games img {
 }
-form{
+form {
   margin-top: 10px;
 }
-.Form fieldset{
-  background-color: rgb(42,44,48);
-  color:white;
-  font-family: Lekton,sans-serif;
+.Form fieldset {
+  background-color: rgb(42, 44, 48);
+  color: white;
+  font-family: Lekton, sans-serif;
 }
-.Form fieldset legend{
+.Form fieldset legend {
   text-align: center;
   font-size: 28px;
 }
-.Form fieldset label{
+.Form fieldset label {
   width: 25% auto;
   margin-right: 0.5em;
   margin-left: 0.2em;
-  padding-top:0.2em;
+  padding-top: 0.2em;
   font-weight: bold;
   text-align: right;
-  float:left;
+  float: left;
 }
-.Form fieldset p{
+.Form fieldset p {
   display: inline-block;
-  font-size:0.9em;
-  margin:7px 0px;
-  width:50%;
-  }
-.socialMediaLinks{
+  font-size: 0.9em;
+  margin: 7px 0px;
+  width: 50%;
+}
+.socialMediaLinks {
   margin-top: 10px;
   margin-left: 10px;
   margin-right: 10px;
   font-size: 16px;
-  font-family: Lekton,sans-serif;
+  font-family: Lekton, sans-serif;
   color: white;
   border-bottom: 1px solid white;
   width: auto;
   height: auto;
 }
-.socialMediaLinks a{
+.socialMediaLinks a {
   padding-right: 10px;
 }
