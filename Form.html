@@ -24,14 +24,12 @@
     <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
       <fieldset class="fieldset">
         <legend class="legend has-text-white" style="font-size:2em;">Contact Us!</legend>
-        <div class="field"><label class="label color has-text-white">First Name:
-            <input type="text" name="firstName" class="input" required placeholder="John" /></label></div>
-        <div class="field"><label class="label has-text-white">Last Name:
-            <input type="text" name="lastName" class="input" placeholder="Wick" /></label></div>
+        <div class="field"><label class="label color has-text-white">Full Name:
+            <input type="text" name="firstName" class="input" placeholder="John Doe" required/></label></div>
         <div class="field"><label class="label has-text-white" for="email">Email Address:
             <input type="email" name="email" class="input" placeholder="someone@example.com" required /></label></div>
         <div class="field"><label class="label has-text-white">Message:
-            <textarea name="message" class="textarea" placeholder="Say something here!"></textarea></label></div>
+            <textarea name="message" class="textarea" placeholder="Say something here!" required></textarea></label></div>
         <div class="control">
           <div data-netlify-recaptcha="true"></div>
           <br>
