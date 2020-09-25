@@ -1,0 +1,16 @@
+{
+    "name": "Hasan's Portfolio Page",
+    "short_name": "Hasan's Portfolio",
+    "start_url":"/index.html",
+    "display": "standalone",
+    "background_colour": "#FFFFFF",
+    "theme_colour": "#FFFFFF",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "https://img.icons8.com/officel/16/000000/console.png",
+            "type": "image/png",
+            "sizes": "16x16"
+        }
+    ]
+}
