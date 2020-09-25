@@ -1,32 +1,41 @@
 /* Add in all new custom CSS here */
 
+html {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+textarea {
+  resize: none;
+}
+
 .jumbotron {
-    color: black;
-    background-color: white;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    text-align: center;
-    position: relative;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
+  color: black;
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 .jumbotron h1 {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .jumbotron h2 {
-    margin: 0;
-    position: absolute;
-    top: 56%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  margin: 0;
+  position: absolute;
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* .jumbotron svg {
@@ -38,22 +47,22 @@
 } */
 
 #chevron-down {
-    margin: 0;
-    position: absolute;
-    bottom: 0%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  margin: 0;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .footer {
-    max-width: 960px;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-bottom: 10px;
-    padding-top: 15px;
-    padding-bottom: 0px;
+  max-width: 960px;
+  /* margin-left: 20%;
+    margin-right: 20%; */
+  margin-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 0px;
 }
 
 .footer .footer-icons {
-    text-align: center;
+  text-align: center;
 }
